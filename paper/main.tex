@@ -31,9 +31,9 @@
 \begin{abstract}
 \noindent A family of methods steers a pretrained flow-matching or diffusion policy without
 changing its weights: a small proposer chooses the input noise for each state, and the frozen
-generator turns that noise into an action. This note collects the family, which is not
-grouped together in a recent survey of flow matching in reinforcement learning, and reads it
-through a VAE-style lens: the proposer is an encoder, the frozen generator is a decoder, the
+generator turns that noise into an action. This note collects the family across robotics and
+image generation, complementing recent surveys of flow matching and RL-driven diffusion
+models, and reads it through a VAE-style lens: the proposer is an encoder, the frozen generator is a decoder, the
 Gaussian is the prior, and value replaces reconstruction. For a KL-regularized objective the
 connection is an exact variational identity. It then asks where reinforcement learning takes
 effect, and organizes the methods by how they carry an action-space value back into noise space:
