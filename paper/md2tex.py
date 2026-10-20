@@ -11,7 +11,7 @@ import re
 HERE = os.path.dirname(os.path.abspath(__file__))
 # The post lives in the website repository; set SITE_REPO if it is not next to this one.
 SITE_REPO = os.environ.get("SITE_REPO", os.path.join(HERE, "..", "..", "..", "yuhanchi.github.io"))
-POST = os.path.join(SITE_REPO, "_posts", "2026-10-18-choose-the-noise.md")
+POST = os.path.join(SITE_REPO, "_posts", "2026-10-18-find-the-golden-noise.md")
 SITE = "https://yuhanchi.github.io"
 
 TEXT_ESC = [("\\", r"\textbackslash{}"), ("&", r"\&"), ("%", r"\%"), ("#", r"\#"),
@@ -162,6 +162,7 @@ FORMAL = [
     ("It is a useful map. I wanted to look more closely at one family that is not brought together as a group in that survey.",
      "It is a useful map. This note examines one family that the survey does not treat as a group."),
     ("Imagine a robot policy", "Consider a robot policy"),
+    ("And I want to call $$w$$ the golden noise.", "We call this chosen $$w$$ the golden noise."),
     ("This post follows that thread", "This note follows that thread"),
     ("The post makes two points and then checks them on a small example.",
      "The note makes two points and then checks them on a small example."),
@@ -247,7 +248,7 @@ def convert(md):
             while not lines[j].startswith("</figure>"):
                 j += 1
             block = "\n".join(lines[i:j])
-            name = re.search(r"choose-the-noise/([\w-]+)\.png", block).group(1)
+            name = re.search(r"find-the-golden-noise/([\w-]+)\.png", block).group(1)
             cap = re.search(r"<figcaption><strong>Figure \d+\.</strong>\s*(.*?)</figcaption>", block, re.S).group(1)
             width = {"five-routes": r"0.82\linewidth"}.get(name, r"\linewidth")
             out += [r"\begin{figure}[htbp]", r"\centering",

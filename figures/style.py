@@ -1,4 +1,4 @@
-"""Shared matplotlib style for the figures of "Choose the Noise, Keep the Flow".
+"""Shared matplotlib style for the figures of "Find the Golden Noise".
 
 Fonts: EB Garamond (SIL OFL), set FONT_DIR to a folder holding EBGaramond.ttf and
 EBGaramond-Italic.ttf; otherwise matplotlib's default serif font is used.
@@ -13,7 +13,7 @@ from matplotlib import font_manager as fm
 HERE = os.path.dirname(os.path.abspath(__file__))
 # SVG/PNG go to the website repository if it is available (SITE_REPO), else to figures/web/.
 SITE_REPO = os.environ.get("SITE_REPO", os.path.join(HERE, "..", "..", "..", "yuhanchi.github.io"))
-OUT_WEB = (os.path.join(SITE_REPO, "assets", "img", "posts", "choose-the-noise")
+OUT_WEB = (os.path.join(SITE_REPO, "assets", "img", "posts", "find-the-golden-noise")
            if os.path.isdir(SITE_REPO) else os.path.join(HERE, "web"))
 OUT_PDF = os.path.join(HERE, "..", "paper", "figures")
 FONT_DIR = os.environ.get("FONT_DIR", "/tmp/choose-noise-figs/downloads/ebgaramond")

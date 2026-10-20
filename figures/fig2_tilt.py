@@ -50,7 +50,7 @@ def gmm_pdf(a):
 # --- samples from the base noise and their decoded actions
 N = 400_000
 import os
-CACHE = os.path.join(os.environ.get("TMPDIR", "/tmp"), "choose-the-noise-fig2-cache.npz")
+CACHE = os.path.join(os.environ.get("TMPDIR", "/tmp"), "find-the-golden-noise-fig2-cache.npz")
 if os.path.exists(CACHE):
     _c = np.load(CACHE); W, A, Ag_cached = _c["W"], _c["A"], _c["Ag"]
 else:

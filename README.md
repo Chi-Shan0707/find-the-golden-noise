@@ -1,7 +1,7 @@
-# Choose the Noise, Keep the Flow
+# Find the Golden Noise
 
-Code for the blog post **[Choose the Noise, Keep the Flow](https://yuhanchi.github.io/writing/choose-the-noise/)**
-([PDF version](https://yuhanchi.github.io/files/choose-the-noise.pdf)), a survey of methods that steer a
+Code for the blog post **[Find the Golden Noise](https://yuhanchi.github.io/writing/find-the-golden-noise/)**
+([PDF version](https://yuhanchi.github.io/files/find-the-golden-noise.pdf)), a survey of methods that steer a
 frozen flow or diffusion policy by choosing its input noise.
 
 The repository contains the small 2D experiment from Section 4 of the post, the scripts for all five
@@ -43,5 +43,5 @@ TeX Live installation with `pdflatex` (packages `tgpagella`, `mathpazo`, `bookta
 ## Citation
 
 If this code or the post is useful, please cite the post; the BibTeX entry is at the end of the
-[post](https://yuhanchi.github.io/writing/choose-the-noise/). Please also cite the original papers for
+[post](https://yuhanchi.github.io/writing/find-the-golden-noise/). Please also cite the original papers for
 the methods discussed there.
