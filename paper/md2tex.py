@@ -159,13 +159,9 @@ TABLE_SPECS = {
 
 # The PDF is more formal than the post: third person, no web-only asides.
 FORMAL = [
-    ("It is a useful map. I wanted to look more closely at one family that is not brought together as a group in that survey.",
-     "It is a useful map. This note examines one family that the survey does not treat as a group."),
     ("Imagine a robot policy", "Consider a robot policy"),
-    ("And I want to call $$w$$ the golden noise.", "We call this chosen $$w$$ the golden noise."),
+    ("I like to call this $$w$$ **the golden noise**.", "We call this chosen $$w$$ **the golden noise**."),
     ("This post follows that thread", "This note follows that thread"),
-    ("The post makes two points and then checks them on a small example.",
-     "The note makes two points and then checks them on a small example."),
     ("Table 1 (click to expand) collects the notation used in the rest of the post;",
      "Table 1 collects the notation used in the rest of the note;"),
     ("In practice, it turned out to be.", "Empirically, DSRL finds that it is."),
